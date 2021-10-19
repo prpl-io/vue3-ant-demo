@@ -1,8 +1,14 @@
 <template>
-    <a-layout-header :style="{ background: '#fff' }">
+    <a-layout-header
+        :style="{
+            background: '#fff',
+            display: 'flex',
+            justifyContent: 'flex-end'
+        }"
+    >
         <a-menu
             mode="horizontal"
-            :style="{ justifyContent: 'end', lineHeight: '64px' }"
+            :style="{ lineHeight: '64px' }"
             :selected-keys="[$route.path]"
         >
             <a-sub-menu>
